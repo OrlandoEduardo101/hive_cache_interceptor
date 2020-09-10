@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:hasura_cache_interceptor/src/services/hive_storage_service.dart';
 import 'package:hive/hive.dart';
+import 'package:hive_cache_interceptor/src/hive_storage_service.dart';
 import 'package:mockito/mockito.dart';
 
 class MockBox<T> extends Mock implements Box<T> {
