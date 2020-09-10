@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:hasura_cache_interceptor/hasura_hive_cache_interceptor.dart';
+import 'package:hasura_cache_interceptor/hasura_cache_interceptor.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
 
