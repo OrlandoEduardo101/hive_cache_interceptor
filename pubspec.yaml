@@ -1,0 +1,26 @@
+name: hive_cache_interceptor
+description: Package to implements cache using hive in hasura_connect package
+version: 1.0.0-dev.1
+author: F-Team <david@flutterando.com.br>
+homepage: https://flutterando.com.br
+repository: https://github.com/Flutterando/hive_cache_interceptor
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0 <2.0.0"
+
+dependencies:
+  http: ^0.12.2
+  path_provider: ^1.6.11
+  hive: ^1.4.4
+  hasura_cache_interceptor: #">=1.0.0 <2.0.0"
+    git: https://github.com/Flutterando/hasura_cache_interceptor
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  mockito: ^4.1.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
