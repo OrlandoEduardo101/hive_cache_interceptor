@@ -1,7 +1,7 @@
-import 'package:flutter_test/flutter_test.dart';
+/*import 'package:flutter_test/flutter_test.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_cache_interceptor/src/hive_storage_service.dart';
-import 'package:mockito/mockito.dart';
+import 'package:mocktail/mocktail.dart';
 
 class MockBox<T> extends Mock implements Box<T> {
   Map data = {};
@@ -77,3 +77,4 @@ void main() {
   //   await Hive.deleteBoxFromDisk("hive-storage-service-test-box");
   // });
 }
+*/
