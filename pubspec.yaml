@@ -16,7 +16,6 @@ dependencies:
   hasura_cache_interceptor: 
     git:
       url: https://github.com/OrlandoEduardo101/hasura_cache_interceptor.git
-      ref: fc937cba7867d7591f0155c757bc27e86e4699d2
   flutter:
     sdk: flutter
 
