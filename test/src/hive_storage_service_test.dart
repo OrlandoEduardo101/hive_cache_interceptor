@@ -27,10 +27,10 @@ class MockBox<T> extends Mock implements Box<T> {
 
   @override
   bool containsKey(key) => data.containsKey(key);
-}
+}*/
 
 void main() {
-  MockBox box;
+ /* MockBox box;
   HiveStorageService storage;
 
   setUp(() {
@@ -75,6 +75,5 @@ void main() {
 
   // tearDown(() async {
   //   await Hive.deleteBoxFromDisk("hive-storage-service-test-box");
-  // });
+  // });*/
 }
-*/
