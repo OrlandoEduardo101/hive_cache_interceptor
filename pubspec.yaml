@@ -14,9 +14,8 @@ dependencies:
   hive: ^1.6.0-nullsafety.2
   dartz: ^0.10.0-nullsafety.1
   hasura_cache_interceptor: 
-    path: /home/orlando-eduardo101/Projects/f-team/hasura_cache_interceptor/
-    #git:
-    #  url: https://github.com/OrlandoEduardo101/hasura_cache_interceptor.git
+    git:
+      url: https://github.com/OrlandoEduardo101/hasura_cache_interceptor.git
   flutter:
     sdk: flutter
 

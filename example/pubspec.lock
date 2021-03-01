@@ -259,9 +259,11 @@ packages:
   hasura_cache_interceptor:
     dependency: transitive
     description:
-      path: "/home/orlando-eduardo101/Projects/f-team/hasura_cache_interceptor/"
-      relative: false
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: b443fa25c3074d95fb3881e8948e536092ff023c
+      url: "https://github.com/OrlandoEduardo101/hasura_cache_interceptor.git"
+    source: git
     version: "1.0.0-dev.4"
   hasura_connect:
     dependency: "direct main"
