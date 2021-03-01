@@ -19,7 +19,7 @@ class StorageController implements IStorageService {
   late final IContainsKey _containsKey;
   final String? boxName;
 
-  String? get getBoxName => boxName;
+  //String? get getBoxName => boxName;
 
   StorageController({this.boxName}) {
     startModule();
@@ -51,14 +51,16 @@ class StorageController implements IStorageService {
   Future<bool> containsKey(String key) async {
     var result = await _containsKey(key);
     return result.fold(
-        (l) => throw ReadError(message: '${l.message}'), (r) => r);
+        (l) => throw ReadError(message: '${l.message}'), 
+        (r) => r);
   }
 
   @override
   Future get(String key) async {
     var result = await _read(key);
     return result.fold(
-        (l) => throw ReadError(message: '${l.message}'), (r) => r['value']);
+        (l) => throw ReadError(message: '${l.message}'), 
+        (r) => r['value']);
   }
 
   @override
