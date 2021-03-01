@@ -25,7 +25,7 @@ main() {
   var _read = ReadMock();
   var _containsKey = ContainesKeyMock();
   var _clear = ClearMock();
-  var controller = StorageController(_put, _read, _delete, _clear, _containsKey);
+  var controller = StorageController();
 
   group('put', () {
     test('must return unit', () async {

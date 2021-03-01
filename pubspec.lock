@@ -105,11 +105,9 @@ packages:
   hasura_cache_interceptor:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "646967bdfa119da5f71400c6a7143d316929193e"
-      url: "https://github.com/OrlandoEduardo101/hasura_cache_interceptor.git"
-    source: git
+      path: "/home/orlando-eduardo101/Projects/f-team/hasura_cache_interceptor/"
+      relative: false
+    source: path
     version: "1.0.0-dev.4"
   hasura_connect:
     dependency: transitive
@@ -229,7 +227,7 @@ packages:
       name: plugin_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.2"
+    version: "2.0.0"
   process:
     dependency: transitive
     description:

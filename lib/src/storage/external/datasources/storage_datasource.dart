@@ -10,14 +10,18 @@ import '../../infra/datasource/storage_datasource.dart';
 class StorageDatasource implements IStorageDatasource {
   Completer<Box> completer = Completer<Box>();
   final HiveInterface _hive;
+  String? boxName;
 
-  StorageDatasource(this._hive) {
+  StorageDatasource(this._hive, {this.boxName});
+
+  void setBoxName(String? value) {
+    this.boxName = value;
     _init();
   }
 
   _init() async {
     await _hive.initFlutter();
-    final box = await _hive.openBox('authLocalStorageService');
+    final box = await _hive.openBox('$boxName');
     completer.complete(box);
   }
 
@@ -47,7 +51,8 @@ class StorageDatasource implements IStorageDatasource {
   Future<Map> read(String key) async {
     var box = await completer.future;
     try {
-      return await box.get(key);
+      var response = await box.get(key);
+      return response == null ? {} : response;
     } catch (e) {
       throw ReadError(message: 'Error read file: $e');
     }
